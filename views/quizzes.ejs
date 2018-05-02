@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title><%=title%></title>
+    <title>Lista de quizzes</title>
     <link rel='stylesheet' href='/stylesheets/style/css'/>
 </head>
 <body>
@@ -10,7 +10,10 @@
 <a href="/credits">Credits</a>
 
 <ul>
-    <% for (let i in quizzes) {%>
+
+   
+	<% var i = 0 %>
+	<% for (i; i < quizzes.length; i++){ %>
     <% const quiz = quizzes[i];%>
     <li>
         <%= quiz.question%> : <%=quiz.answer%>
