@@ -6,19 +6,17 @@
 </head>
 <body>
 <h1> Lista de quizzes</h1>
-<a href="/">Inicio</a>
-<a href="/credits">Credits</a>
 
 <ul>
-
-   
 	<% var i = 0 %>
 	<% for (i; i < quizzes.length; i++){ %>
     <% const quiz = quizzes[i];%>
     <li>
-        <%= quiz.question%> : <%=quiz.answer%>
+       Pregunta número <%=quiz.id%>. <%= quiz.question%> : <%=quiz.answer%>
     </li>
     <%}%>
 </ul>
+<a href="/">Inicio</a>
+<a href="/credits">Credits</a>
 </body>
 </html>
